@@ -116,6 +116,33 @@
         dignitycare2011@gmail.com
     </div>
 
+
+<div class="container ">
+  <div id="tripetto"></div>
+  <script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tripetto-runner-autoscroll"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
+  <script>
+  var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNnNwSEZYLy83L0diUHhKSUZwa25zNEtDN2xSVzBmQkRnSmNvVlhad0FQST0iLCJkZWZpbml0aW9uIjoiZi9GeUpVdjdsaWQyUTNoVnphTCsyVEdUL21aeWpqVFF1UFMyVXc1dVFZRT0iLCJ0eXBlIjoiY29sbGVjdCJ9.GTKT7zuuPT9Z4lf9d6KYlrDVYHMJFWkPH7JY0p4KQrw" });
+  
+  TripettoAutoscroll.run({
+      element: document.getElementById("tripetto"),
+      definition: tripetto.definition,
+      styles: tripetto.styles,
+      l10n: tripetto.l10n,
+      locale: tripetto.locale,
+      translations: tripetto.translations,
+      attachments: tripetto.attachments,
+      onSubmit: tripetto.onSubmit
+  });
+  </script>
+</div>
+
+
+<br><br><br>
+
+
+
     <!--Google Map-->
     <style>
       iframe {
